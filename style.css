@@ -11,15 +11,15 @@
   font-size: 2.5rem;
 }
 
-.navbar-brand span{
-    font-size: 2rem;
-    color: white;
+.navbar-brand span {
+  font-size: 2rem;
+  color: white;
 }
 
-header{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
 .menu li {
@@ -35,12 +35,12 @@ header{
   transition: 0.5s;
 }
 
-header .menu li a:hover{
-    color: green;
+header .menu li a:hover {
+  color: green;
 }
 
-header .menu li a:hover::after{
-    width: 100%;
+header .menu li a:hover::after {
+  width: 100%;
 }
 
 header .menu li a.active::after {
@@ -48,29 +48,147 @@ header .menu li a.active::after {
 }
 
 header .menu li a.active {
-    color: green !important;
+  color: green !important;
 }
 
 /* Carousel */
 
-.carousel .avata{
-    width: 150px;
+.carousel .avata {
+  width: 150px;
 }
 
-.carousel-caption{
-    top: 50%;
-    transform: translateY(-50%);
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.carousel-item{
-    height: 100vh;
+.carousel-item {
+  height: 100vh;
 }
 
-.carousel-item img{
-    height: 100%;
+.carousel-item img {
+  height: 100%;
 }
 
 /* .button{
 padding: 50px;
 border-radius: 50%;
 } */
+
+.card {
+  margin-bottom: 40px;
+}
+
+.project__content .card {
+  border: none;
+  box-shadow: 0 0 10px gray;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  /* transition: all 0.5s; */
+}
+
+.project__content .card:hover .card-body h4 {
+  color: green;
+}
+
+.card-text {
+  color: gray;
+}
+
+.project__content .card .card-body {
+  border: 1px solid transparent;
+  border-radius: 0 0 1rem 1rem;
+  border-top: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.project__content .card:hover .card-body {
+  border-color: green;
+}
+
+/* .nav-pills{
+  justify-content: center;
+} */
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: green;
+  border-color: green !important;
+  color: white;
+}
+
+.project__content ul li {
+  padding-right: 10px;
+}
+
+.project__content .nav-pills .nav-item .nav-link {
+  border: 1px solid black !important ;
+
+  color: black;
+}
+
+#service {
+  background-image: url(./images/3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+position: relative;
+}
+
+#service .overlay{
+position: absolute;
+width: 100%;
+left: 0;
+top: 0;
+background-color: #0000005e;
+height: 100%;
+}
+
+.service__title {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.service__title h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 1rem 0 0;
+}
+
+.service__title p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.service__content .card {
+  padding: 2rem 1rem;
+  background-color: #ffffff2e;
+  backdrop-filter: blur(10px);
+}
+
+.service__content .card .card-body h4 {
+  color: white;
+}
+
+.service__content .card .card-body .card-title p {
+  color: white;
+}
+
+.service__content .card .card-body i {
+  color: green;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  border: 1 solid transparent;
+}
+
+.service__content .card:hover {
+  background-color: black;
+  border-color: white;
+}
